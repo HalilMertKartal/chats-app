@@ -1,4 +1,4 @@
-package com.example.chatsapp
+package com.example.chatsapp.rv
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatsapp.R
+import com.example.chatsapp.data.Message
+import com.example.chatsapp.data.MessageType
 import com.google.firebase.auth.FirebaseAuth
 
 class MessageAdapter(val context: Context, private val messageList: ArrayList<Message>) :

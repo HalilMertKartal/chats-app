@@ -1,4 +1,4 @@
-package com.example.chatsapp
+package com.example.chatsapp.rv
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatsapp.R
+import com.example.chatsapp.data.User
+import com.example.chatsapp.ui.ChatActivity
 
 
 class UserAdapter(val context:Context, val userList: ArrayList<User>): RecyclerView.Adapter<UserAdapter.UserViewHolder>() {

@@ -1,4 +1,4 @@
-package com.example.chatsapp
+package com.example.chatsapp.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,6 +8,9 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatsapp.R
+import com.example.chatsapp.data.User
+import com.example.chatsapp.rv.UserAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -44,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     }
     // When logout item is selected, log out.
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId  ==  R.id.logout) {
+        if(item.itemId  == R.id.logout) {
             // Log out and go to login screen
             auth.signOut()
             val intent = Intent(this@MainActivity, Login::class.java)

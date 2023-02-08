@@ -1,4 +1,4 @@
-package com.example.chatsapp
+package com.example.chatsapp.data
 
 class Message {
     var message: String? = null

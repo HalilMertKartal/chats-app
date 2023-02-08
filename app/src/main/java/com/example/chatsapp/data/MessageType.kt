@@ -1,4 +1,4 @@
-package com.example.chatsapp
+package com.example.chatsapp.data
 
 enum class MessageType(val num: Int) {
     SENT(1),

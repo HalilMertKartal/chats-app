@@ -1,18 +1,17 @@
-package com.example.chatsapp
+package com.example.chatsapp.ui
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.ImageView
-import android.widget.Scroller
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatsapp.data.Message
+import com.example.chatsapp.rv.MessageAdapter
+import com.example.chatsapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
